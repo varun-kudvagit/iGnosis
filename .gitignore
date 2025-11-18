@@ -1,0 +1,52 @@
+# ---- Node / Package Managers ----
+node_modules/
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+# pnpm / npm (if someone switches)
+pnpm-error.log
+npm-debug.log*
+package-lock.json
+
+# ---- Build outputs ----
+dist/
+build/
+*.log
+
+# ---- Vite / Vitest ----
+.vite/
+node_modules/.vite/
+coverage/
+.vitest/
+
+# ---- TypeScript ----
+*.tsbuildinfo
+
+# ---- Lint / Tools ----
+.eslintcache
+
+# ---- Environment files (keep an .env.example tracked) ----
+.env
+.env.local
+.env.*.local
+
+# ---- IDE / OS junk ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/   # keep if you want project-wide settings, otherwise ignore
+
+# ---- MSW ----
+# NOTE: We DO want to commit the service worker file so the app works out of the box.
+# public/mockServiceWorker.js
+
+# ---- Misc caches ----
+*.swp
+*.swo
